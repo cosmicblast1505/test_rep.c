@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main(){
+    printf("\n\n\tWELCOME DEAR CUSTOMER!\n\nWe are delighted to host you and provide you with our unique hospitality.\n\nBefore you proceed for the payment of your meal, we would like to introduce you the onging offers we have for you today.\n\n\t1. Get a cashback of 10 percent for payment using UPI/Card/Netbanking\n\t2. Receive a cashback of 7 percent using Cash.\n\nWhat would you like to chose today ? \n\t Enter : ");
+    int n;
+    scanf("%d",&n);
+    printf("\n\nWell Dear Customer!\n\nPlease enter the amount : ");
+    int amt;
+    scanf("%d",&amt);
+    if (n==1){
+        float gamt=amt*(float)1/10;
+        printf("\n\tPAYMENT SUCCESSFUL.\n\tTHANK YOU!\n\nYou have paid %d rupees, your cashback of %f rupees will be reflected in 2-5 business days.\n\n\tVISIT AGAIN!\n",amt,gamt);
+        
+    }
+    else if (n==2){
+        float gamt=amt*(float)7/100;
+        printf("\n\tPAYMENT SUCCESSFUL.\n\tTHANK YOU!\n\nYou have paid %d rupees, your cashback of %f rupees will be reflected in 2-5 business days.\n\n\tVISIT AGAIN!\n\n",amt,gamt);
+        
+    }
+}
